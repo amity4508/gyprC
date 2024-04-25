@@ -1,11 +1,35 @@
 import React, { useState } from 'react';
 import { Sidebar } from '../Sidebar/Sidebar';
 import logo from '../../Components/assets/images/logdo2.png';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+
+
+
+export const menuItems = [
+    { label: 'Home', link: '/' },
+    { label: 'About', link: '/about-us' },
+    { label: 'Services', link: '/services' },
+    { label: 'Contact Us', link: '/contact-us' },
+    { 
+        label: 'Products', 
+        dropdown: [
+            { label: 'Category 1', link: '/products/category1' },
+            { label: 'Category 2', link: '/products/category2' }
+        ]
+    }
+];
 
 export const Navbar = () => {
     const [showSidebar, setShowSidebar] = useState(false);
+    const [ProductsDropdown, setProductsDropdown] = useState(false);
 
+     const [activeItem, setActiveItem] = useState(0); 
+
+    const handleItemClick = (index) => {
+        setActiveItem(index);
+    };
+
+    
     const toggleSidebar = () => {
         setShowSidebar(!showSidebar);
     };
@@ -13,6 +37,10 @@ export const Navbar = () => {
     const closeSidebar = () => {
         setShowSidebar(false);
     };
+
+    // const toggleProductsDropdown = () => {
+    //     setProductsDropdown(!ProductsDropdown);
+    // };
 
     return (
         <>
@@ -38,37 +66,41 @@ export const Navbar = () => {
                     </div>
 
 
-                 <div className='md:order-2 flex items-center justify-end logobg  w-1/2 sm:w-full  hidden md:block px-5  '>
-                 <div class="flex items-center justify-center h-full">
-                    <div class="flex flex-col items-center">
-                        <ul class="flex flex-col items-center  md:flex-row md:gap-10 max-sm:gap-4 sm:gap-4">
-                            <li><a href="/" class="text-gray-900 text-lg">Home</a></li>
-                            <li>
-                                <Link to="/about-us" >
-                                <p class="text-gray-900 text-lg">About</p>
-                                </Link>
-                                </li>
-                                <li>
-                                <Link to="/about-us" >
-                                <p class="text-gray-900 text-lg">Products</p>
-                                </Link>
-                                </li>
-
-                               <li> <Link to="/services" >
-                                <p class="text-gray-900 text-lg">Services</p>
-                                </Link></li>
-                                <li> <Link to="/contact-us" >
-                                <p class="text-gray-900 text-lg">Contact Us</p>
-                                </Link></li>
-                                
-
-                        </ul>
-                    </div>
+                    <div className='md:order-2 flex items-center justify-end logobg  w-1/2 sm:w-full  hidden md:block px-5'>
+            <div className="flex items-center justify-center h-full">
+                <div className="flex flex-col items-center">
+                    <ul className="flex flex-col items-center  md:flex-row md:gap-10 max-sm:gap-4 sm:gap-4">
+                        {menuItems.map((menuItem, index) => (
+                            <li key={index}>
+                                {menuItem.dropdown ? (
+                                    <div
+                                        onMouseEnter={() => setActiveItem(index)}
+                                        onMouseLeave={() => setActiveItem(null)}
+                                        className="relative"
+                                    >
+                                        <p className="text-gray-900 text-lg cursor-pointer">{menuItem.label}</p>
+                                        {activeItem === index && (
+                                            <ul className="absolute top-full  w-[190px] left-0 bg-gray-300 shadow-lg rounded-md py-2 px-4">
+                                                {menuItem.dropdown.map((item, i) => (
+                                                    <li key={i} className='text-gray-900 text-lg'><NavLink to={item.link} activeClassName="active" onClick={() => handleItemClick(index)}>
+                                                        {item.label}</NavLink></li>
+                                                ))}
+                                            </ul>
+                                        )}
+                                    </div>
+                                ) : (
+                                    <NavLink to={menuItem.link} activeClassName="active" onClick={() => handleItemClick(index)}>
+                                        <p className={`text-gray-900 text-xl hover:text-orange-500 ${activeItem === index ? 'active' : ''}`}>{menuItem.label}</p>
+                                    </NavLink>
+                                )}
+                            </li>
+                        ))}
+                    </ul>
                 </div>
-
-                 </div>
-                  </div>
-                </div>
+            </div>
+        </div>
+        </div>
+        </div>
             </nav>
           </div>
             {showSidebar && (
@@ -88,11 +120,4 @@ export const Navbar = () => {
         </>
     );
 };
-
-export default Navbar;
-
-
-
-
-
 

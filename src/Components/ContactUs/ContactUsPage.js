@@ -35,7 +35,7 @@ export const ContactUsPage = () => {
              {/* Contact inner  */}
      <div className="jersey-25-regular mx-auto text-center py-10">
      <h1 className="text-6xl py-10 text-navBlue  ">Other Queries?</h1>
-     <p className="text-white text-3xl text-navBlue ">We got you covered</p>
+     <p className=" text-3xl text-navBlue ">We got you covered</p>
 
 
 

@@ -18,14 +18,23 @@ const expertiseData = [
   },
   {
     id: 1,
-    image: img1,
+    image
+    : img1,
     title: "Web Development",
     content:
       "We offer full-cycle technology solutions that streamline your digital transformation journey. With cutting-edge technical expertise.",
   },
-  { id: 1, image: img1, title: "Web Development", content: "Web Development" },
+  { id: 1, image: img1, title: "PPC / Paid marketing",
+   content: "Positioning your website in the first place on Google is our commitment. We always put our best foot forward to accomplish our goals." 
+  },
 
-  { id: 1, image: img1, title: "Web Development", content: "Web Development" },
+  { id: 5, image: img1,
+     title: "Research",
+      content: "Research Paper Writing Services, longer and more detailed Research, designed" },
+      
+  { id: 1, image: img1,
+    title: "Homework Help",
+     content: "Study and get any kind of help in your homework from 100+ million step-by-step explanations with expert Q&As, minimal plagiarism and experts' support 24*7." },
 ];
 
 export const ExpertArea = () => {
@@ -52,14 +61,16 @@ export const ExpertCard = ({ title, image, content }) => {
   return (
     <>
       {/* ----Company left img---- */}
-      <div class=" h-full max-sm:w-full relative group">
-        <img className="h-[300px] w-full" src={image} alt="companyImage" />
-        <h1 className=" text-2xl  font-bold text-gray-700">{title}</h1>
+      <div class=" h-full max-sm:w-full relative group ">
+        <img className="h-[230px] w-full rounded-[20px] shadow-md" src={image} alt="companyImage" />
+        <h1 className=" text-xl  font-bold text-gray-700 px-4">{title}</h1>
 
         {/* <!-- companyLink --> */}
-        <div class="absolute top-0 left-0 w-full cursor-pointer h-full opacity-0 bg-gray-800  group-hover:opacity-90 transition-opacity flex justify-center items-center">
-          <div className=" text-white p-2">
-            <h1 className="text-lg">{content}</h1>
+        <div class="absolute top-0 left-0 w-full cursor-pointer h-full opacity-0 bg-yellow-300  group-hover:opacity-90 transition-opacity flex justify-center items-center rounded-[20px] shadow-md">
+          <div className=" text-navBlue p-4">
+          <h1 className=" text-2xl  font-bold text-white mb-5">{title}</h1>
+
+            <h1 className="text-lg ">{content}</h1>
           </div>
         </div>
       </div>

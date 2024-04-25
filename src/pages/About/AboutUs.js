@@ -98,10 +98,6 @@ export const OurProcess = () => {
             <span className="" ><BiCheck class="text-4xl block font-bold  text-blue-400 " /></span>               
               <h1 className="text-2xl text-white">Rediscover and Repeat</h1>
             </div>
-
-
-            
-           
           </div>
         </div>
       </div>
