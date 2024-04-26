@@ -1,6 +1,6 @@
 import React from "react";
 import img1 from "../../Components/assets/images/hero1.jpg"
-import { ServicesCard } from "./SerivicesCard";
+import { ServicesCard } from "./ProductCard";
 
 export const Products = () => {
     return(

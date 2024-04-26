@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-rou
 import { Home } from '../pages/Home/Home';
 import { AboutUs } from '../pages/About/AboutUs';
 import Footer from '../Components/Footer/Footer';
-import { Products } from '../pages/Products/Services';
+import { Products } from '../pages/Products/Product';
 import { ContactUsPage } from '../Components/ContactUs/ContactUsPage';
 import { Navbar } from '../Components/Navbar/Navbar';
 import { FoodServices } from '../pages/Services/FoodServices';
@@ -28,7 +28,6 @@ export const UserRoute = () => {
     <Route path='/product/digital-services' element={<DigitalS/>} />
     </Routes>
     <Footer/>
-
     </BrowserRouter>
 
   );
