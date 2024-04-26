@@ -2,8 +2,9 @@ import React from "react";
 import { ContactUs } from "../../Components/ContactUs/Contact";
 import img1 from "../../Components/assets/images/hero1.jpg";
 import { BiCheck } from "react-icons/bi";
+import { RiSendPlane2Fill } from "react-icons/ri";
 
-export const AboutUs = () => {
+export const EducationalS = () => {
   return (
     <>
       <div className="bg-white">
@@ -15,12 +16,13 @@ export const AboutUs = () => {
             backgroundAttachment: "fixed",
           }}
         >
-          <h1 className="text-6xl py-10 text-white  ">About Us</h1>
-          <p className="text-white text-lg">
-            Our motivation and mission is to make Security Adoption & Absorption
-            easy for organizations.
+          <h1 className="text-6xl py-6 text-white  ">Educational Services</h1>
+          <p className="text-white text-lg xl:px-10">
+          Our solutions are focused around automation, DevSecOps, securing your supply chain and ensuring a continuous monitoring of your network and environment.
+          Our solutions are focused around automation, DevSecOps, securing your supply chain and ensuring a continuous monitoring of your network and environment.
           </p>
         </div>
+        
         <div className="container mx-auto py-10 lg:w-[80%] -z-0 ">
           <div className="flex justify-center mb-5">
          
@@ -61,6 +63,7 @@ export const AboutUs = () => {
         <OurProcess />
         <Approach/>
 
+        <ContactUs />
       </div>
     </>
   );
@@ -110,29 +113,31 @@ export const Approach = () =>{
 
         <>
          <div className="container mx-auto lg:w-[80%] px-2">
-            <div className="approach flex md:flex-row max-sm:flex-col sm:flex-col  py-10 gap-5 ">
+            <div className="approach flex md:flex-row max-sm:flex-col sm:flex-col  py-10 gap-10 ">
 
                 <div className="left lg:w-1/2 max-sm:w-full sm:w-full">
                     <div className="text-center  py-10 ">
-                     <h1 className="text-4xl" >Our Approach</h1>
+                     <h1 className="text-4xl" >Help contain risk, embrace change, and elevate trust</h1>
                      <hr className="w-[100px] mx-auto h-[3px] mt-2 text-black bg-black" />
                      <div className="">
-                     <p className="mt-5 text-base text-gray-600">The Modern world has made life easy, but at the same time, it has also has introduced security risks with the unwanted human presence within corporate networks. Defending yourself is by addressing the main problem that is to behave like the adversary who can gain entry and remain undetected.</p>
+                     <p className="mt-5 text-base text-gray-600">We as a team look at IT Security a little differently. Our solutions are focused around automation, DevSecOps, securing your supply chain and ensuring a continuous monitoring of your network and environment. </p>
 
-                     <p className="mt-5 text-base text-gray-600">We believe in helping you be proactive and shift left by adopting security early and help you defend against these unknown adversaries by providing you the knowledge and tools to be proactive with your networks and applications and neutralize them. Like a Jerquer we search for the Jackdaw and help you secure your Cyberspace. This forms the basis of our comprehensive approach to limiting security exposure.</p>
+                     <p className="mt-5 text-base text-gray-600">Our strength lies in helping Software and Hardware factories and users adopt DevSecOps and Security best practices early, thus enabling them to be secured. We don’t just provide the tools, but match it with our strong domain expertise and knowledge of these tools and to enable you and create strong processes. We help you improvise your security testing and help you discover security vulnerabilities at different stages of an applications lifecycle.</p>
                      </div>
                     </div>
                 </div>
             <div className="right lg:w-1/2 max-sm:w-full sm:w-full bg-navbg1 py-14 px-4 " > 
-            <h1 className="max-sm:text-4xl text-4xl text-center text-white jersey-25-regular mb-5" >Discovering The Unkown</h1>
+            <h1 className="max-sm:text-4xl text-4xl text-center text-white jersey-25-regular mb-5" >Making Security Simple,
+           Our goal and mission</h1>
             <div className="py-4 text-base text-white">
-            <p>
-            The greatest threat to any organization or country is the – State-Sponsored Actor, who has all that he needs to take you down. You name a device, a technology and they have it. They use various tools and techniques to discover, extract information of value by exploiting an unknown vulnerability or an unknown hidden exception like a misconfigured application or network elements. All your network and perimeter security devices like NGN-firewalls, security sensors, Application security firewalls, manual testing, and SIEM’s are no match for them.
-            </p>
 
               <p className="mt-6">
-              Our approach is to help you be proactive, monitor, and test for the unknown before you deploy. We would help you frame your goals and then identify and map the right tools to enable you to be proactive. These technologies would help you to determine how the adversary is likely to infiltrate and what information can they take away.
+              We help you improvise your security testing and help you discover security vulnerabilities at different stages of an applications lifecycle.
               </p>
+               <div className="flex justify-center mx-auto mt-16 py-2 rounded-[1px] items-center gap-4 bg-orange-500 hover:bg-orange-400 w-[200px]"> 
+                  <button className="" type='submit'>CONTACT NOW</button>
+                  <RiSendPlane2Fill />
+               </div>
             </div>
 
             </div>

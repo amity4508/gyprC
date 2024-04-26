@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -6,6 +6,7 @@ import "swiper/css/effect-fade";
 import { TestimonialSlider } from "../../Testimonials/Testimonial";
 import img1 from "../../Components/assets/images/hero2.png"
 import logo from "../../Components/assets/images/logdo2.png"
+import { Link } from "react-router-dom";
 
 
 export const BitBee = () => {
@@ -36,7 +37,7 @@ export const BitBee = () => {
     
     <div className="container mx-auto mb-10 pb-20 lg:px-8 "   >
       <div className="py-10">
-        <h1 className="text-4xl font-bold text-white">BitBee Media </h1>
+        <h1 className="text-6xl max-sm:text-3xl font-bold text-white jersey-25-regular">BitBee Media </h1>
       </div>
       <div className="flex max-sm:flex-col gap-5">
               {/* ----Company left img---- */}
@@ -46,7 +47,7 @@ export const BitBee = () => {
     {/* <!-- companyLink --> */}
     <div class="absolute top-0 left-0 w-full cursor-pointer h-full opacity-0 bg-gray-800  group-hover:opacity-90 transition-opacity flex justify-center items-center">
        <div className="  ">
-       <a class=" font-bold text-lg    block p-2 bg-white text-black rounded hover:bg-blue-900 hover:text-white" href="#">Visit this Website</a>
+       <Link to="/" className='font-bold text-lg block p-2 bg-white text-black rounded hover:bg-blue-900 hover:text-white'   >Visit this Website</Link>
        </div>
     </div>
 </div>

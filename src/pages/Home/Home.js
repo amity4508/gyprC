@@ -8,6 +8,7 @@ import { CompanyInfo } from "../../Components/CompanyInfo/CompanyInfo";
 import { Nimmin } from "../../Components/CompanyInfo/Nimmin";
 import { BitBee } from "../../Components/CompanyInfo/BitBeet";
 import { MyAssignmentHelp } from "../../Components/CompanyInfo/MyAssignmentHelp";
+import { EquipMedy } from "../../Components/CompanyInfo/EquipMedy";
 export const Home = () =>{
     return(
         <>
@@ -18,6 +19,7 @@ export const Home = () =>{
         <CompanyInfo/>
         <MyAssignmentHelp/>
         <Nimmin/>
+        <EquipMedy/>
         <BitBee/>
         <Testimonial/>
         <ContactUs/>

@@ -3,25 +3,26 @@ import { Sidebar } from '../Sidebar/Sidebar';
 import logo from '../../Components/assets/images/logdo2.png';
 import { NavLink } from 'react-router-dom';
 
-
-
 export const menuItems = [
     { label: 'Home', link: '/' },
     { label: 'About', link: '/about-us' },
-    { label: 'Services', link: '/services' },
-    { label: 'Contact Us', link: '/contact-us' },
     { 
-        label: 'Products', 
+        label: 'Services', 
         dropdown: [
-            { label: 'Category 1', link: '/products/category1' },
-            { label: 'Category 2', link: '/products/category2' }
+           { label: 'Marketing/SEO ', link: '/product/digital-services' },
+            { label: 'Educational Services ', link: '/product/educational-services' },
+            { label: 'Foody Services', link: '/product/foody-services' },
+            { label: 'Health Care', link: '/product/health-care' },
+
         ]
-    }
+    },
+    { label: 'Products', link: '/products' },
+    { label: 'Contact Us', link: '/contact-us' },
+  
 ];
 
 export const Navbar = () => {
     const [showSidebar, setShowSidebar] = useState(false);
-    const [ProductsDropdown, setProductsDropdown] = useState(false);
 
      const [activeItem, setActiveItem] = useState(0); 
 
@@ -37,11 +38,6 @@ export const Navbar = () => {
     const closeSidebar = () => {
         setShowSidebar(false);
     };
-
-    // const toggleProductsDropdown = () => {
-    //     setProductsDropdown(!ProductsDropdown);
-    // };
-
     return (
         <>
           <div className='w-[100%] border-bottom '>
@@ -55,7 +51,6 @@ export const Navbar = () => {
                         </button>
                     </div>
                  
-
                   <div className='w-[100%] flex justify-between  '>
                          {/* logo */}
                          <div class='md:order-1 w-1/2 max-sm:w-full  sm:w-full  flex items-center justify-center py-2 bg-navbg1 max-sm:bg-white'>
@@ -80,9 +75,9 @@ export const Navbar = () => {
                                     >
                                         <p className="text-gray-900 text-lg cursor-pointer">{menuItem.label}</p>
                                         {activeItem === index && (
-                                            <ul className="absolute top-full  w-[190px] left-0 bg-gray-300 shadow-lg rounded-md py-2 px-4">
+                                            <ul className="absolute top-full  w-[240px] left-0 bg-gray-300 shadow-lg rounded-md py-2 px-4">
                                                 {menuItem.dropdown.map((item, i) => (
-                                                    <li key={i} className='text-gray-900 text-lg'><NavLink to={item.link} activeClassName="active" onClick={() => handleItemClick(index)}>
+                                                    <li key={i} className='text-gray-900 hover:text-orange-500 text-lg'><NavLink to={item.link} activeClassName="active" onClick={() => handleItemClick(index)}>
                                                         {item.label}</NavLink></li>
                                                 ))}
                                             </ul>
@@ -90,7 +85,7 @@ export const Navbar = () => {
                                     </div>
                                 ) : (
                                     <NavLink to={menuItem.link} activeClassName="active" onClick={() => handleItemClick(index)}>
-                                        <p className={`text-gray-900 text-xl hover:text-orange-500 ${activeItem === index ? 'active' : ''}`}>{menuItem.label}</p>
+                                        <p className={`text-gray-900 text-xl hover:text-orange-500 ${activeItem === index ? 'text-orange-500 ' : ''}`}>{menuItem.label}</p>
                                     </NavLink>
                                 )}
                             </li>

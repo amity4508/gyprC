@@ -1,9 +1,8 @@
 import React from "react";
-import { ContactUs } from "../../Components/ContactUs/Contact";
 import img1 from "../../Components/assets/images/hero1.jpg";
 import { BiCheck } from "react-icons/bi";
 
-export const AboutUs = () => {
+export const DigitalS = () => {
   return (
     <>
       <div className="bg-white">
@@ -15,7 +14,7 @@ export const AboutUs = () => {
             backgroundAttachment: "fixed",
           }}
         >
-          <h1 className="text-6xl py-10 text-white  ">About Us</h1>
+          <h1 className="text-6xl py-10 text-white  ">Digital Marketing Services</h1>
           <p className="text-white text-lg">
             Our motivation and mission is to make Security Adoption & Absorption
             easy for organizations.

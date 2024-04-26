@@ -1,15 +1,13 @@
-import React, {useState} from "react";
+import React from "react";
 export const Sidebar = () =>{
 
-    const [showSidebar, setShowSidebar] = useState(false);
+    // const [showSidebar, setShowSidebar] = useState(false);
 
-    const toggleSidebar = () => {
-        setShowSidebar(!showSidebar);
-    };
+    // const toggleSidebar = () => {
+    //     setShowSidebar(!showSidebar);
+    // };
 
-    const closeSidebar = () => {
-        setShowSidebar(false);
-    };
+ 
     return(
         <div className="sidebar px-2">
         <ul>

@@ -1,8 +1,8 @@
 import React from "react";
-import { ContactUs } from "../../Components/ContactUs/Contact";
 import img1 from "../../Components/assets/images/hero1.jpg"
+import { ServicesCard } from "./SerivicesCard";
 
-export const Services = () => {
+export const Products = () => {
     return(
         <>
      <div
@@ -19,11 +19,9 @@ export const Services = () => {
             easy for organizations.
           </p>
         </div>
+        {/* Services Content */}
 
-
-
-        <h1 className="text-4xl font-gray-700 py-10">dkfjdkfjkdfj</h1>
-        <ContactUs/>
+        <ServicesCard/>
 
         <div>
 
@@ -33,3 +31,6 @@ export const Services = () => {
 
     )
 }
+
+
+

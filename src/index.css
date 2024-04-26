@@ -10,8 +10,8 @@ body {
 }
 
 .active {
-  color: rgb(255, 178, 63);
-  font-weight: bold; 
+  color: rgb(255, 145, 0);
+  font-weight: 500; 
 }
 
 .jersey-25-regular {
@@ -20,11 +20,6 @@ body {
   font-style: normal;
 }
 
-.navbg1{
-  /* background-color: #15283b; */
-
-    /* color: rgb(255, 255, 255); */
-}
 
 .navbg{
   /* background-color: #15283b; */
