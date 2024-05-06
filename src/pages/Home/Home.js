@@ -7,7 +7,7 @@ import { ContactUs } from "../../Components/ContactUs/Contact";
 import { CompanyInfo } from "../../Components/CompanyInfo/CompanyInfo";
 import { Nimmin } from "../../Components/CompanyInfo/Nimmin";
 import { BitBee } from "../../Components/CompanyInfo/BitBeet";
-import { MyAssignmentHelp } from "../../Components/CompanyInfo/MyAssignmentHelp";
+import { TingleTaste } from "../../Components/CompanyInfo/MyAssignmentHelp";
 import { EquipMedy } from "../../Components/CompanyInfo/EquipMedy";
 export const Home = () =>{
     return(
@@ -17,9 +17,10 @@ export const Home = () =>{
       <Hero/>
         <ExpertArea />
         <CompanyInfo/>
-        <MyAssignmentHelp/>
-        <Nimmin/>
+        <TingleTaste/>
+      
         <EquipMedy/>
+        <Nimmin/>
         <BitBee/>
         <Testimonial/>
         <ContactUs/>

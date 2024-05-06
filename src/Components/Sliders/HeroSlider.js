@@ -5,11 +5,9 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
 import { Autoplay, Pagination, Navigation, EffectFade } from 'swiper/modules';
-
 import img1 from '../../Components/assets/images/comp1.jpg'
 import img2 from '../../Components/assets/images/hero1.jpg'
 import img3 from '../../Components/assets/images/hero2.png'
-
 export const slides = [
   {
     title: 'Custom Learning Solution 1',

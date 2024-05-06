@@ -54,7 +54,7 @@ export const Navbar = () => {
                   <div className='w-[100%] flex justify-between  '>
                          {/* logo */}
                          <div class='md:order-1 w-1/2 max-sm:w-full  sm:w-full  flex items-center justify-center py-2 bg-navbg1 max-sm:bg-white'>
-                        <div class="flex items-center justify-end">
+                        <div class="flex items-center justify-start">
                             <img src={logo} alt="Logo" class="lg:h-[74px] lg:w-[80px] max-sm:h-[63px] sm:h-[50px] sm:w-[60px] bg-white rounded-full p-[2px] max-sm:w-[60px]" />
                             <span class="text-white text-lg max-sm:text-base max-md:text-base bg-orange-500 px-[6px] py-[2px] rounded-sm ">Pushing up performance</span>
                         </div>

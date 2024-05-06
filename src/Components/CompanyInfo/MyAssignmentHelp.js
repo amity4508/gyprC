@@ -7,8 +7,8 @@ import { TestimonialSlider } from "../../Testimonials/Testimonial";
 import img1 from "../../Components/assets/images/hero1.jpg";
 import logo from "../../Components/assets/images/logdo2.png";
 
-export const MyAssignmentHelp = () => {
-  const myassignmentData = [
+export const TingleTaste = () => {
+  const tingletaste = [
     {
       quote:
         "Aptara’s unique combination of digital technology and publishing expertise has streamlined and simplified our operations. We now have a single, trusted content production partner to handle all of our digital publishing needs.",
@@ -33,11 +33,11 @@ export const MyAssignmentHelp = () => {
   return (
     <div
       className="mt-[40px]"
-      // style={{
-      //   backgroundImage: `linear-gradient(to bottom, rgba(21,40,59, 0.8), rgba(21,40,59, 0.8)), url(${img1})`,
-      //   backgroundSize: "100% 100%",
-      //   backgroundAttachment: "fixed",
-      // }}
+      style={{
+        backgroundImage: `linear-gradient(to bottom, rgba(21,40,59, 0.8), rgba(21,40,59, 0.8)), url(${img1})`,
+        backgroundSize: "100% 100%",
+        backgroundAttachment: "fixed",
+      }}
     >
       <div className="container mx-auto mb-10  lg:px-8 max-sm:px-2 ">
         <div className="py-10 ">
@@ -64,8 +64,8 @@ export const MyAssignmentHelp = () => {
 
           <div className=" w-2/3 max-sm:w-full   ">
             <div className="items-center mt-14">
-              {/* <TestimonialSlider testimonials={myassignmentData} /> */}
-              <TestimonialSlider testimonials={myassignmentData} backgroundColor="red" />
+              {/* <TestimonialSlider testimonials={tingletaste} /> */}
+              <TestimonialSlider testimonials={tingletaste} backgroundColor="red" />
 
             </div>
           </div>
