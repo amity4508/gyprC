@@ -1,17 +1,21 @@
 import React from "react";
-import img1 from "../../Components/assets/images/hero1.jpg";
-
+import digitalm from "../../Components/assets/images/digitakmarketing.jpg";
+import educationals from "../../Components/assets/images/education services.jpg";
+import homework from "../../Components/assets/images/home work help.jpg";
+import ppcm from "../../Components/assets/images/ppc marketing.jpg";
+import research from "../../Components/assets/images/RESEARCH.jpg";
+import webdev from "../../Components/assets/images/WEB DEVELOPMENT.jpg";
 const expertiseData = [
   {
     id: 1,
-    image: img1,
+    image: webdev,
     title: "Digital Marketing",
     content:
       "We are top digital marketing agency in Delhi. The company's marketing services are aimed at delivering measurable Transformational Growth to enterprises.",
   },
   {
     id: 1,
-    image: img1,
+    image: digitalm,
     title: "Educational Services",
     content:
       "We are one-stop destination for academic excellence and support. We are passionate about empowering students to achieve their educational goals and reach their full potential.",
@@ -19,20 +23,20 @@ const expertiseData = [
   {
     id: 1,
     image
-    : img1,
+    : educationals,
     title: "Web Development",
     content:
       "We offer full-cycle technology solutions that streamline your digital transformation journey. With cutting-edge technical expertise.",
   },
-  { id: 1, image: img1, title: "PPC / Paid marketing",
+  { id: 1, image: ppcm, title: "PPC / Paid marketing",
    content: "Positioning your website in the first place on Google is our commitment. We always put our best foot forward to accomplish our goals." 
   },
 
-  { id: 5, image: img1,
+  { id: 5, image:research,
      title: "Research",
       content: "Research Paper Writing Services, longer and more detailed Research, designed" },
       
-  { id: 1, image: img1,
+  { id: 1, image: homework,
     title: "Homework Help",
      content: "Study and get any kind of help in your homework from 100+ million step-by-step explanations with expert Q&As, minimal plagiarism and experts' support 24*7." },
 ];
@@ -40,10 +44,10 @@ const expertiseData = [
 export const ExpertArea = () => {
   return (
     <div className="container mx-auto experArea py-5 lg:px-8">
-      <h1 className="text-4xl max-sm:text-3xl max-sm:text-center font-bold text-gray-600">
+      <h1 className="text-6xl  jersey-25-regular max-sm:text-3xl max-sm:text-center mb-10 font-bold text-gray-600">
         Our Areas Of Expertise
       </h1>
-      <div className="container mx-auto grid grid-cols-3 max-sm:grid-cols-1 gap-5 mt-5">
+      <div className="container mx-auto grid grid-cols-3 max-sm:grid-cols-1 gap-10 mt-5">
         {expertiseData.map((expertise) => (
           <ExpertCard
             key={expertise.id}
@@ -66,11 +70,11 @@ export const ExpertCard = ({ title, image, content }) => {
         <h1 className=" text-xl  font-bold text-gray-700 px-4">{title}</h1>
 
         {/* <!-- companyLink --> */}
-        <div class="absolute top-0 left-0 w-full cursor-pointer h-full opacity-0 bg-yellow-300  group-hover:opacity-90 transition-opacity flex justify-center items-center rounded-[20px] shadow-md">
+        <div class="absolute top-0 left-0 w-full cursor-pointer h-full opacity-0 bg-blue-900  group-hover:opacity-90 transition-opacity flex justify-center items-center rounded-[20px] shadow-md">
           <div className=" text-navBlue p-4">
-          <h1 className=" text-2xl  font-bold text-white mb-5">{title}</h1>
+          <h1 className=" text-2xl  font-bold text-orange-500 mb-5">{title}</h1>
 
-            <h1 className="text-lg ">{content}</h1>
+            <h1 className="text-lg text-white ">{content}</h1>
           </div>
         </div>
       </div>

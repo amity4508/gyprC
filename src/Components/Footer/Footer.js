@@ -1,10 +1,11 @@
 import React from 'react';
 import logo from "../../Components/assets/images/logdo.png"
 import { AiFillFacebook, AiFillInstagram, AiFillLinkedin, AiFillTwitterSquare } from 'react-icons/ai';
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className=" text-white bg-navbg1 py-10 ">
+    <footer className=" text-white bg-navbg1 py-2 ">
       <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center">
     {/* logo */}
         <div className="mb-4 lg:mb-0">
@@ -13,24 +14,27 @@ const Footer = () => {
         
         {/* Navigation Links */}
         <nav className="mb-4  lg:mb-0">
-          <ul className="flex max-sm:flex-col flex-wrap ">
-            <li className="mr-6">
-              <a href="#" className="hover:text-gray-800 text-xl">Home</a>
+          <ul className="flex max-sm:flex-row  gap-3">
+            <li className="">
+              <NavLink to="/" className="hover:text-gray-800 text-xl">Home</NavLink>
             </li>
-            <li className="mr-6">
-              <a href="#" className="hover:text-gray-800 text-xl">About</a>
+            <li className="">
+              <NavLink to="/" className="hover:text-gray-800 text-xl">Home</NavLink>
             </li>
-            <li className="mr-6">
-              <a href="#" className="hover:text-gray-800 text-xl">Services</a>
+            <li className="">
+              <NavLink to="/" className="hover:text-gray-800 text-xl">Home</NavLink>
             </li>
-            <li>
-              <a href="#" className="hover:text-gray-800 text-xl">Contact</a>
+            <li className="">
+              <NavLink to="/" className="hover:text-gray-800 text-xl">Home</NavLink>
             </li>
+            
+        
+           
           </ul>
         </nav>
         <div className="SocialMedia">
             <div className="row">
-                <ul className='flex'>
+                <ul className='flex gap-3'>
                     <li><a href=""><AiFillFacebook className="text-4xl hover:text-blue-400 rounded"  /></a></li>
                     <li><a href=""><AiFillInstagram className="text-4xl hover:text-blue-400 rounded"  /></a></li>
                     <li><a href=""><AiFillLinkedin className="text-4xl hover:text-blue-400 rounded"  /></a></li>

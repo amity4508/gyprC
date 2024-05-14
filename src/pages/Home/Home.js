@@ -7,8 +7,9 @@ import { ContactUs } from "../../Components/ContactUs/Contact";
 import { CompanyInfo } from "../../Components/CompanyInfo/CompanyInfo";
 import { Nimmin } from "../../Components/CompanyInfo/Nimmin";
 import { BitBee } from "../../Components/CompanyInfo/BitBeet";
-import { TingleTaste } from "../../Components/CompanyInfo/MyAssignmentHelp";
+import { TingleTaste } from "../../Components/CompanyInfo/TingleTaste";
 import { EquipMedy } from "../../Components/CompanyInfo/EquipMedy";
+import { TeacherCool } from "../../Components/CompanyInfo/TeacherCool";
 export const Home = () =>{
     return(
         <>
@@ -18,11 +19,11 @@ export const Home = () =>{
         <ExpertArea />
         <CompanyInfo/>
         <TingleTaste/>
-      
         <EquipMedy/>
         <Nimmin/>
         <BitBee/>
-        <Testimonial/>
+        <TeacherCool/>
+        {/* <Testimonial/> */}
         <ContactUs/>
       </div>
         

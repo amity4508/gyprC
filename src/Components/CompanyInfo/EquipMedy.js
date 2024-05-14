@@ -6,6 +6,7 @@ import "swiper/css/effect-fade";
 import { TestimonialSlider } from "../../Testimonials/Testimonial";
 import img1 from "../../Components/assets/images/hero1.jpg";
 import logo from "../../Components/assets/images/logdo2.png";
+import equipmedy from "../assets/images/education services.jpg"
 
 export const EquipMedy = () => {
   const myassignmentData = [
@@ -47,7 +48,7 @@ export const EquipMedy = () => {
         <div className="flex max-sm:flex-col gap-5">
           {/* ----Company left img---- */}
           <div class="w-1/3 h-full max-sm:w-full relative group shadow-sm ">
-            <img className="h-[400px]  rounded-[20px] " src={img1} alt="companyImage" />
+            <img className="h-[400px]  rounded-[20px] " src={equipmedy} alt="companyImage" />
 
             {/* <!-- companyLink --> */}
             <div class="absolute top-0 left-0 w-full cursor-pointer h-full opacity-0 bg-gray-800  group-hover:opacity-90 transition-opacity flex justify-center items-center rounded-[20px] ">

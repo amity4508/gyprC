@@ -1,6 +1,8 @@
 import React from "react";
 import img1 from "../../Components/assets/images/hero3.jpg"
-import img2 from "../../Components/assets/images/hero2.png"
+import img2 from "../../Components/assets/images/corporate office image 482x627.jpg"
+import logo from "../../Components/assets/images/logdo.png"
+
 
 
 export const CompanyInfo = () =>{
@@ -16,12 +18,13 @@ export const CompanyInfo = () =>{
                 <p className="mb-4 text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam vero recusandae officia sit natus fugit quia non dicta ex libero. Error velit harum quisquam vel tempore cupiditate veniam illum esse.</p>
                 <p className="mb-4 text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam vero recusandae officia sit natus fugit quia non dicta ex libero. Error velit harum quisquam vel tempore cupiditate veniam illum esse.</p>
 
-                <h1 className="text-3xl font-bold text-blue-700 ">GY <span className="text-orange-500">P</span> R</h1>
+                {/* <h1 className="text-3xl font-bold text-blue-700 ">GY <span className="text-orange-500">P</span> R</h1> */}
+                <img className="h-[100px]" src={logo} />
              </div>
 
              <div className="left w-1/3 max-sm:w-full text-white lg:absolute top-[-25px] right-[0px] ">
 
-                <img className="h-[430px] w-[280px] max-sm:w-full rounded-3xl max-sm:mt-10 " src={img2} alt="companyImg" />
+                <img className="h-[490px] w-[280px] max-sm:w-full rounded-3xl max-sm:mt-10 " src={img2} alt="companyImg" />
              </div>
             
 

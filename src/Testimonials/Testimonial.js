@@ -92,9 +92,9 @@ export const TestimonialSlider = ({ testimonials }) => {
             <div className="bg-white shadow-lg border rounded-[20px] hover:bg-blue-950  hover:text-white  min-h-[300px] max-h-[300px] p-6 font-medium text-gray-500 group">
               <p className="text-lg">{testimonial.quote}</p>
               <p className="font-semibold text-gray-800  group-hover:text-orange-500 py-2">{testimonial.author}</p>
-              <div className="company-logo">
+              {/* <div className="company-logo">
                 <img className="h-[50px] w-[100px]" src={testimonial.companyLogo} alt="" />
-              </div>
+              </div> */}
             </div>
           </SwiperSlide>
         ))}
